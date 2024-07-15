@@ -1,0 +1,41 @@
+<!-- 
+    Problem Statement : 
+        Write a program to concatenate the following two strings
+            “I love my India”
+            “India is my Country”.
+        Create a button. When this button is clicked, the concatenated string should be
+        displayed.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-313-5</title>
+</head>
+<body>
+    
+    <div id="concatenate">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Concat</button>
+    </div>
+
+    <script>
+        function loadDoc()
+        {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function()
+            {
+                if(this.readyState == 4 && this.status == 200)
+                {
+                    document.getElementById("concatenate").innerHTML = "I love my India " + "India is my Country";
+                }
+            };
+            xhttp.open("GET", "", true);
+            xhttp.send();
+        }
+    </script>
+
+</body>
+</html>

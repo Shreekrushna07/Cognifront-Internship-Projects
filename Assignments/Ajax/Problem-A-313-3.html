@@ -1,0 +1,34 @@
+<!-- 
+    Problem Statement : 
+        Calculate the product of numbers 30 and 20 and display it using Ajax.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-313-3</title>
+</head>
+<body>
+    
+    <div id="product"></div>
+
+    <script>
+        var a = 30;
+        var b = 20;
+        var Product = a * b;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function()
+        {
+            if(this.readyState == 4 && this.status == 200)
+            {
+                document.getElementById("product").innerHTML = "The product of 30 and 20 is " + Product;
+            }
+        }
+        xhttp.open("GET", "", true);
+        xhttp.send();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+	Problem Statement : 
+		Print current date and time using Ajax.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-313-1</title>
+</head>
+<body>
+    
+	<div id="CurrentDate"></div>
+
+	<script>
+		var d = new Date();
+
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function()
+		{
+			if(this.readyState == 4 && this.status == 200)
+			{
+				document.getElementById("CurrentDate").innerHTML = d.getDate();
+			}
+		};
+		xhttp.open("GET", "", true);
+		xhttp.send();
+	</script>
+
+</body>
+</html>
