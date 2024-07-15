@@ -1,0 +1,28 @@
+<!-- 
+    Problem Statement : 
+        Print the name of the months in the year using for loop.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-311-5</title>
+</head>
+<body>
+    
+    <p id="Month"></p>
+
+    <script>
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var month = "";
+        var i;
+        for (i = 0; i < monthNames.length; i++) {
+            month += monthNames[i] + "<br>";
+        }
+        document.getElementById("Month").innerHTML = month;
+    </script>
+
+</body>
+</html>
