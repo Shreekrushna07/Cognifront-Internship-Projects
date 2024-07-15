@@ -1,0 +1,94 @@
+<!-- 
+    Problem Statement : 
+        Create College Admission form.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-306-8</title>
+    <style>
+        .bordered-div
+        {
+            border: 2px solid black;
+            background-color:bisque;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .inner-div
+        {
+            border: 2px solid black;
+            background-color: #424a4c;;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .title
+        {
+            background-color: #bc97f9;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><marquee direction="right" bgcolor="orange">Student Admission Form</marquee></center>
+    </div>
+
+    <div class="bordered-div">
+        <center><h2><b>K.K. Wagh Institute of Engineering Education and Research (KKWIEER)<b></h2></center>
+        
+        <div class="inner-div">
+
+            <center><p style="color:aliceblue;">Admission no : <input type="text" style="width:70px"> Receipt no : <input type="text" style="width:70px"> Date : <input type="date"></p></center>
+
+            <h3 class="title"><b>Personal Information</b></h3>
+            <form>
+            
+            <p style="color:aliceblue;">First Name : <input type="text" style="width:250px"> Middle Name : <input type="text" style="width:250px"> Sirname : <input type="text" style="width:250px"></p>
+
+            <p style="color:aliceblue;">Gender : <input type="radio" name="gender" value="male" > Male <input type="radio" name="gender" value="female"> Female </p>
+            <table>
+            <tr>
+                <td>
+                    <p style="color:aliceblue;">Current Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+                <td>
+                    <p style="color:aliceblue;">Permenant Address : </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="addr" id="adr" cols="30" rows="3"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <textarea name="addr" id="adgyr" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            </table>
+            <p style="color:aliceblue;">Email-id : <input type="email"></p>
+            <p style="color:aliceblue;">Phone no : <input type="text"> Telephone no : <input type="text"> Parents Mo.No : <input type="text" class="text"></p>
+            <h3 class="title"><b>Academic History and Other Information</b></h3>
+            <table>
+                <tr>
+                    <td><p style="color:aliceblue;">Adhar card (upload here): <input type="file"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Leaving Certificate (upload here): <input type="file"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Previous Year Marksheet (upload here): <input type="file"></p></td>
+                </tr>
+            </table>
+            <input type="checkbox">
+            <span style="color: red;">"Are you sure you want to submit this admission form and above information is true if not then reset the information according instruction?"</span>
+            <br><br>
+            <span style="color: #00f1ff;">Reset the Form : <input type="reset" value="Reset"></span>
+            <span style="color: #48ff48;">Submit the Form : <input type="submit" value="Submit"></span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

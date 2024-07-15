@@ -1,0 +1,88 @@
+<!-- 
+    Problem Statement : 
+        Create a Job Application form using different types of form controls. It
+        should include name of a person, age, DOB, Address, email-id, file upload
+        option, experience, and skills.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-306-7</title>
+    <style>
+        .bordered-div
+        {
+            border: 2px solid black;
+            background-color:bisque;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .inner-div
+        {
+            border: 2px solid black;
+            background-color: #2a525f;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .title
+        {
+            background-color: #bc97f9;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><marquee direction="right" bgcolor="orange">Job Application Form</marquee></center>
+    </div>
+
+    <div class="bordered-div">
+        <center><h2><b>Application for Employment<b></h2></center>
+        <div class="inner-div">
+            <h3 class="title"><b>Personal Information</b></h3>
+            <form>
+            <table>
+                <tr>
+                    <td><p style="color:aliceblue;">Name : <input type="text" style="width:250px"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Age : <input type="text" style="width:20px"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">DOB : <input type="date"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Address : <br><textarea name="addr" id="adr" cols="30" rows="3"></textarea></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Email-id : <input type="email"></p></td>
+                </tr>
+            </table>
+
+            <h3 class="title"><b>Experience and Technical Knoweldge</b></h3>
+            <table>
+                <tr>
+                    <td><p style="color:aliceblue;">Upload File : <input type="file"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Experience : <input type="text"></p></td>
+                </tr>
+                <tr>
+                    <td><p style="color:aliceblue;">Skills : <input type="text"></p></td>
+                </tr>
+            </table>
+            <input type="checkbox">
+            "By submitting this job application form, you confirm that you have read and understood our privacy policy. Are you sure you accept and agree to the terms outlined in the policy?"
+            <br><br>
+            Reset the Form : <input type="reset" value="Reset">
+            Submit the Form : <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
