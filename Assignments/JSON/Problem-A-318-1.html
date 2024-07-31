@@ -1,0 +1,24 @@
+<!-- 
+    Problem Statement : 
+        Write a json program that will create an object using key value pair for book and its price:-
+        Industrial Electronics: 550, Graph Theory:795, Operating System: 1000, Visual Basics 2005:467. 
+        Print the price of operating system book. 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-318-1</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var myObj, x;
+        myObj = {"Electronics" : 550, "Graph Theory" : 795, "Operating System" : 1000, "Visual Basics 2005" : 467};
+        x = myObj["Operating System"]
+        document.getElementById("demo").innerHTML = x;
+    </script>
+</body>
+</html>

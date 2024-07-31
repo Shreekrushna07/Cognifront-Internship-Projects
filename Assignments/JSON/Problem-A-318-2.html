@@ -1,0 +1,24 @@
+<!-- 
+    Problem Statement : 
+        Write a json program to create an object city and its famous fruit:- 
+        Nashik: Grapes, Nagpur:Orange,Ratnagiri: alphonso, Jalgoan:Banana.
+        Replace the value alphonso by coconut. 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-A-318-2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var myObj, x;
+        myObj = {"Nashik" : "Grapes", "Nagpur" : "Orange", "Ratnagiri" : "alphonso", "Jalgoan" : "Banana"};
+        myObj["Ratnagiri"] = "coconut";
+        document.getElementById("demo").innerHTML = myObj.Ratnagiri;
+    </script>
+</body>
+</html>
