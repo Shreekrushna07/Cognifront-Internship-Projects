@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    width: 500px; /* Adjust the width as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px; /* Increase the padding as needed */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px; /* Increase the font size as needed */
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px; /* Adjust the margin as needed */
+    font-size: 18px; /* Increase the font size as needed */
+    color: #333;
+}
+
+input {
+    padding: 15px; /* Increase the padding as needed */
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    font-size: 16px; /* Increase the font size as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    color: white;
+    padding: 15px; /* Increase the padding as needed */
+    font-size: 18px; /* Increase the font size as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+

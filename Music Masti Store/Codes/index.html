@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Masti Store</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a10acb31d4.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Home page -->
+    <section class="home" id="home">
+        <div class="home">
+            <header>
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About us</a></li>
+                    <li><a href="#about1"><i class="fas fa-store"></i> Store</a></li>
+                    <li><a href="#services"><i class="fas fa-tools"></i> Services</a></li>
+                    <li><a href="http://localhost/Music-Masti%20Store/code/signup.php"><i class="fas fa-shopping-cart"></i> Order Instruments</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                </ul>
+                
+            </div>
+            </header>
+            <div class="content">
+                <div class="left-col">
+                    <h1><br>Music Masti Store<br></h1>
+                </div>
+                <div class="right-col">
+                    <p>
+                        Click Here To Listen
+                        <img src="play.png" id="icon">
+                    </p>
+                </div>
+                <div>
+                    <p class="sub-heading">Harmonize your passion with precision – Explore a symphony of possibilities at Music Masti Store, where every note finds its perfect instrument.</p>
+                </div>
+            </div>
+        </div>
+
+        <audio id="mySong">
+            <source src="song.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+            icon.onclick = function()
+            {
+                if(mySong.paused)
+                {
+                    mySong.play();
+                    icon.src = "pause.png";
+                }
+                else
+                {
+                    mySong.pause();
+                    icon.src = "play.png";
+                }
+            }
+        </script>
+
+    </section>
+
+    <!-- About Us section -->
+    <section class="about" id="about">
+
+        <div class="container">
+            <div class="row">
+                <center><h1>Learn More About Us</h1></center>
+                <div class="para">
+
+                    <p class="a1">Welcome to Music Masti Store, where our passion for music meets your needs for the perfect instrument. With a commitment to quality and a love for the art of sound, we strive to bring you a symphony of possibilities. Explore our collection and find the instrument that resonates with your musical journey.</p>
+                    <p class="a2" style="margin-top: 30px;">At Music Masti Store, we believe in harmonizing your passion with precision, ensuring that every note you play finds its ideal instrument. Our dedicated team of experts is here to assist you on your musical adventure, providing guidance and offering a diverse range of instruments for every skill level.</p>
+                    <p class="a3" style="margin-bottom: 100px; margin-top: 30px;">Contact No : +91 8888 9999 22</p>
+                
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About1 section -->
+    <section class="about1" id="about1">
+        <div class="back">
+            <h1 style="text-align: center; padding-top: 20px; transition: background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; font-family: 'Arial', sans-serif; font-size: 36px; color: rgb(84 0 255 / 86%); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);" onmouseover="this.style.backgroundColor='#333'; this.style.color='#fff'; this.style.textShadow='2px 2px 6px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#333'; this.style.textShadow='2px 2px 4px rgba(0, 0, 0, 0.3)';">Welcome to Music Masti Store</h1>
+            
+            
+            <div style="display: flex;">
+            <div class="left-side">
+
+                <div>
+                    <p style="font-family: cursive; font-style: italic;">Welcome to Music Masti Store, where our passion for music resonates in every instrument we offer. At Music Masti, we curate a diverse collection of high-quality musical instruments, from soulful string instruments like guitars, violins, and harps to the bold tones of brass instruments including trumpets, euphoniums, and French horns, as well as the enchanting melodies produced by woodwind instruments like flutes, bassoons, and clarinets. Our team of dedicated experts is committed to guiding you on your musical journey, ensuring that every note you play finds its perfect companion. Whether you're a seasoned musician or a beginner, our store provides a harmonious space where you can discover, explore, and find the instrument that will elevate your musical expression. Join us at Music Masti Store, where the world of music unfolds, and let the symphony begin. Click below icon to see specification of musical instruments.</p>
+                </div>
+
+            <div class="drop">
+                <ul>
+                    <li>
+                        <a href="#">Music Instruments</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="#">String</a>
+                                    <ul class="dropdown1">
+                                        <li>
+                                            <a href="#" onmouseover="showImage('Harp.png', 'Harp', ['String Count: Harp with 47 nylon strings.', 'Wooden Frame: Crafted with a durable wooden frame.','Pedal System: Features a responsive pedal modulation.', '47 Nylon Strings, Durable Wooden Frame', 'Responsive Pedal Modulation, Compact and Lightweight'], 400, 950); showButton('harpSongButton', 'song.mp3')" >Harp</a>
+                                        </li>  <!--onmouseout="hideImage()"-->
+
+                                        <li>
+                                            <a href="#" onmouseover="showImage('violin.png','Violin', ['String Count: Violin with 4 steel strings.', 'Wooden Body: Crafted from high-quality maple and spruce.','Tonal Range: Produces rich tones across various pitches.', 'Compact Size: Portable and easy to handle.', 'Bow Material: Includes a horsehair bow for versatile playing.'], 300, 700)">Violin</a>
+                                        </li>
+
+                                        <li><a href="#" onmouseover="showImage('Guitar.png', 'Guitar', ['String Count: Guitar with 6 steel strings.','Body Material: Crafted with a resonant combination of wood.','Fretboard: Features a smooth rosewood fretboard for easy playability.','Pickup System: Equipped with a built-in pickup for amplified sound.','Versatile acoustic-electric design for various playing styles.'], 200, 1000)">Guitar</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Brass</a>
+                                    <ul class="dropdown1">
+                                        <li><a href="#" onmouseover="showImage('Trumpet.png', 'Trumpet', ['Material: Constructed from brass for durability and resonance.','Valves: Equipped with three piston valves for precise pitch control.','Bore Size: Features a medium-sized bore for a balanced tone.','Bell: Incorporates a flared bell for enhanced projection.','Lacquered or silver-plated finish for protection and aesthetics.'], 400, 1000)">Trumpet</a></li>
+
+                                        <li><a href="#" onmouseover="showImage('Euphonium.png', 'Euphonium', ['Material: Brass construction for durability and warm tonal quality.','Valves: Typically four piston valves for versatile playing.','Bore Size: Moderate to large bore for a rich and resonant sound.','Bell: Upright bell design for a focused and projecting tone.','Lacquered or silver-plated finish for protection and visual appeal.'], 800, 2500)">Euphonium</a></li>
+
+                                        <li><a href="#" onmouseover="showImage('FrenchHorn.png', 'French Horn', ['Material: Yellow brass construction for durability and a bright sound.','Valves: Typically four rotary valves for precise control.','Bore Size: Medium to large bore for a warm and rich tone.','Bell: Conical-shaped bell for a focused and projecting sound.','Lacquered or silver-plated finish for protection and aesthetics.'], 1200, 3000)">FrenchHorn</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Woodwind</a>
+                                    <ul class="dropdown1">
+                                        <li><a href="#" onmouseover="showImage('Flute.png', 'Flute', ['Silver-plated or nickel silver construction for a bright and clear sound.','Keys: Typically features 16 closed-hole keys for ease of play.','Boehm system for modern and versatile playing.','Cylindrical with a conical head joint for balanced tone.','Oval-shaped embouchure hole for improved air control.'], 300, 1000)">Flute</a></li>
+
+                                        <li><a href="#" onmouseover="showImage('Bassoon.png', 'Bassoon', ['Material: Maple or other hardwood for durability and warm tone.','Heckel system, featuring numerous keys for precise control.','Double Reed: Utilizes a double reed for unique timbre.','Body Type: Long and folded design for extended range.','Lacquered or natural finish for protection and aesthetics.','Additional Key: High D key for expanded playing capability.'], 3000, 8000)">Bassoon</a></li>
+
+                                        <li><a href="#" onmouseover="showImage('Clarinet.png', 'Clarinet', ['Material: Grenadilla wood or hard rubber for rich and warm tone.','Key System: Boehm system with various keys for precise intonation.','Single Reed: Utilizes a single reed for versatile playing.','Body Type: Cylindrical with a straight bore for balanced sound.','Lacquered or matte finish for protection and aesthetics.','Extended Key: Features an additional low E-flat key for enhanced range.'], 500, 2000)">Clarineet</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="right-side">
+            <div class="instrument-image" id="instrumentImageContainer">
+                
+            </div>
+            <div class="specification" id="specification">
+
+            </div>
+
+            <!-- <div class="audio-player">
+                <audio id="instrumentAudio" preload="auto">
+                    <source src="song.mp3" type="audio/mp3" id="audioSource">
+                </audio>
+                <button onclick="playInstrumentAudio()">Play Instrument Song</button>
+            </div> -->
+            
+            <script>
+                function showImage(instrument, description, specifications, priceMin, priceMax)
+                {
+                    var imageContainer = document.getElementById('instrumentImageContainer');
+                    var imageElement = document.createElement('img');
+                    imageElement.src = instrument;
+                    imageElement.alt = instrument;
+                    imageElement.style.width = '1000px'; // Set the desired width
+                    imageElement.style.height = '500px'; // Set the desired height
+                    imageContainer.innerHTML = '';
+                    imageElement.style.margin = '40px';
+                    imageContainer.appendChild(imageElement);
+
+                    var specificationContainer = document.getElementById('specification');
+                    specificationContainer.innerHTML = '<center><b><h1 onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">' + description + '</h1></b></center>' + '<ul list-style-type: square; style="font-size: 25px; margin-left: 200px; font-family: cursive; font-style: italic;"><li>' + specifications[0] + '</li><li>' + specifications[1] + '</li><li>' + specifications[2] + '</li><li>' + specifications[3] + '</li><li>' + specifications[4] + '<li>Price-range: $' + priceMin + ' - $' + priceMax + '</li></ul>';
+                }
+        
+                function hideImage()
+                {
+                    var imageContainer = document.getElementById('instrumentImageContainer');
+                    imageContainer.innerHTML = ''; // Clear the container when not hovering
+
+                    var specificationContainer = document.getElementById('specification');
+                    specificationContainer.innerHTML = '';
+                }
+
+                function addHoverEffect(element) 
+                {
+                    element.style.color = 'blue'; // Change the text color on hover
+                }
+
+                function removeHoverEffect(element) 
+                {
+                    element.style.color = ''; // Remove the hover effect (reset color)
+                }
+
+            </script>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shopping,onlinetransaction,Quality Assurance,Delivery and Shipping: -->
+    <section class="services" id="services">
+        <div class="service1">
+            <div class="con">
+                <h1 onmouseover="this.style.color='#f63fe7';" onmouseout="this.style.color='#000';">Our Services</h1>
+                <div class="row">
+                    <div class="service">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>Shopping</h2>
+                        <p>Buy instruments effortlessly online.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-globe"></i>
+                        <h2>Online Transaction</h2>
+                        <p>Secure transactions for convenient shopping.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-star"></i>
+                        <h2>Quality Assurance</h2>
+                        <p>Guaranteed quality for musical excellence.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-truck"></i>
+                        <h2>Free Delivery</h2>
+                        <p>Enjoy free and prompt instrument delivery.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        <h2>Exchanges</h2>
+                        <p>Easy exchanges for customer satisfaction.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-info"></i>
+                        <h2>Customer Support</h2>
+                        <p>Responsive support for all inquiries.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-forward-fast"></i>
+                        <h2>Fast & Reliable Shipping</h2>
+                        <p>Swift and reliable instrument shipping.</p>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h2>Educational Resources</h2>
+                        <p>Enhance skills with valuable learning materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+        
+        <div class="s">
+        <div class="gal">
+            <div>
+                <h1 style="text-align: center; padding-top: 20px; color: #333; background-color: rgb(237 117 117 / 90%); transition: background-color 0.3s ease, color 0.3s ease;" onmouseover="addHoverEffect(this)" onmouseout="removeHoverEffect(this)">
+                    Music Gallery
+                </h1>
+            
+                <script>
+                    function addHoverEffect(element) 
+                    {
+                        element.style.backgroundColor = '#3498db'; // Hover background color
+                        element.style.color = '#fff'; // Hover text color
+                    }
+            
+                    function removeHoverEffect(element) 
+                    {
+                        element.style.backgroundColor = '#eee'; // Default background color
+                        element.style.color = 'rgb(237 117 117 / 90%)'; // Default text color
+                    }
+                </script>
+            </div>
+            <div class="bo">
+            <div class="roww">
+	
+                <div class="coll">
+                    
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="1.png">
+                            <audio controls="">
+                                <source src="m1.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+            
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="2.png">
+                            <audio controls="">
+                                <source src="m2.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+            
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="3.png">
+                            <audio controls="">
+                                <source src="m3.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="coll">
+            
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="4.png">
+                            <audio controls="">
+                                <source src="m4.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+            
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="5.png">
+                            <audio controls="">
+                                <source src="m5.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+            
+                    <div class="player">
+                        <div class="imgbox">
+                            <img src="6.png">
+                            <audio controls="">
+                                <source src="m6.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="footer" id="footer" style="background-color: #000000; color: #fff; padding: 40px 0;">
+
+        <div style="display: flex; justify-content: space-around;">
+    
+            <div style="flex: 1; padding-right: 20px; margin-left: 50px;">
+                <h2>Contact Information</h2>
+                <p style="font-size: 20px;">Email: info@musicmasti.com</p>
+                <p style="font-size: 20px;">Phone: +91 8888 9999 22</p>
+                <p style="font-size: 20px;">Address: 750 Harmony Street, Music City</p>
+            </div>
+    
+            <div style="flex: 1; padding-right: 20px;">
+                <h2>Follow Us</h2>
+                <p>
+                    <i class="fab fa-facebook" style="font-size: 30px;"></i>
+                    <a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">Facebook</a>
+                </p>
+                <p>
+                    <i class="fab fa-twitter" style="font-size: 30px;"></i>
+                    <a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">Twitter</a>
+                </p>
+                <p>
+                    <i class="fab fa-instagram" style="font-size: 30px;"></i>
+                    <a href="#" style="color: #fff; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">Instagram</a>
+                </p>
+            </div>
+            
+    
+            <div style="flex: 1;">
+                <h2>Quick Links</h2>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="#home" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-home" style="margin-right: 8px;"></i> Home
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="#about" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-info-circle" style="margin-right: 8px;"></i> About us
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="#about1" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-store" style="margin-right: 8px;"></i> Store
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="#services" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-tools" style="margin-right: 8px;"></i> Services
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="signup.php" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-shopping-cart" style="margin-right: 8px;"></i> Order Instruments
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 10px; font-size: 20px;">
+                        <a href="#gallery" style="color: #fff; text-decoration: none; display: flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='#3498db'" onmouseout="this.style.color='#fff'">
+                            <i class="fas fa-images" style="margin-right: 8px;"></i> Gallery
+                        </a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+    
+        </div>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 All rights reserved. Designed by shreekrushnadongare</p>
+    </section>
+    
+</body>
+</html>
